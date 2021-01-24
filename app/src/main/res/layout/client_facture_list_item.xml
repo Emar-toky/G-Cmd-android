@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="1dp"
+            android:background="#FAFAFA">
+            <LinearLayout
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_margin="8dp">
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/cerclebackground_client"
+                    android:src="@drawable/clinet_prof"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/clientClick"
+                android:layout_width="185dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp">
+                <TextView
+                    android:id="@+id/client_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="italic"
+                    android:text="id_cli"
+                    android:padding="9dp"
+                    android:textSize="15sp"/>
+                <TextView
+                    android:id="@+id/client_nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ClientNom"
+                    android:padding="9dp"
+                    android:textStyle="bold"
+                    android:textSize="17sp"/>
+            </LinearLayout>
+            <LinearLayout
+
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp">
+                <ImageView
+                    android:id="@+id/menu_option_client"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
